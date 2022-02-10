@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let ballArray = [#imageLiteral(resourceName: "ball1.png"),#imageLiteral(resourceName: "ball2.png"),#imageLiteral(resourceName: "ball3.png"),#imageLiteral(resourceName: "ball4.png"),#imageLiteral(resourceName: "ball5.png")]
-
-
-
+    func genImage() -> UIImage {
+        return [#imageLiteral(resourceName: "ball3"), #imageLiteral(resourceName: "ball1"), #imageLiteral(resourceName: "ball2"), #imageLiteral(resourceName: "ball3"), #imageLiteral(resourceName: "ball4") ][Int.random(in: 0...4)]
+    }
+    
+    @IBOutlet weak var headingLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func askButtonPressed(_ sender: UIButton) {
+        print("button Pressed")
+        imageView.image = genImage()
+        headingLabel.text = "Here is your mystery answer:"
+    }
+    
 }
 

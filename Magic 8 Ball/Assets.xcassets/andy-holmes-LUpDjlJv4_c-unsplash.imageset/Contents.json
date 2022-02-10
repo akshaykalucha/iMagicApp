@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "andy-holmes-LUpDjlJv4_c-unsplash.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "andy-holmes-LUpDjlJv4_c-unsplash@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "andy-holmes-LUpDjlJv4_c-unsplash@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
